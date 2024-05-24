@@ -210,22 +210,17 @@ substrate-prometheus-endpoint = { git = "https://github.com/paritytech/polkadot-
 substrate-rpc-client = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
 substrate-wasm-builder = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
 
-
-#TODO: hydra-dx uses a custom fork
-# ENSURE VERSIONS ALIGN ON OUR FORK
-orml-benchmarking = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-orml-currencies = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-orml-tokens = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-orml-traits = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-orml-utilities = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-orml-vesting = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-
-
-# orml XCM support
-orml-unknown-tokens = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-orml-xcm = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-orml-xcm-support = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
-orml-xtokens = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", default-features = false }
+#TODO: make versions match
+orml-benchmarking = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", branch = "polkadot-v1.7.0", default-features = false }
+orml-currencies = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", branch = "polkadot-v1.7.0",  default-features = false }
+orml-tokens = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", branch = "polkadot-v1.7.0", default-features = false }
+orml-traits = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", branch = "polkadot-v1.7.0", default-features = false }
+orml-utilities = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", branch = "polkadot-v1.7.0", default-features = false }
+orml-vesting = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git", branch = "polkadot-v1.7.0", default-features = false }
+orml-unknown-tokens = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git",branch = "polkadot-v1.7.0",  default-features = false }
+orml-xcm = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git",branch = "polkadot-v1.7.0", default-features = false }
+orml-xcm-support = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git",branch = "polkadot-v1.7.0", default-features = false }
+orml-xtokens = { git = "https://github.com/OpenZeppelin/open-runtime-module-library.git",branch = "polkadot-v1.7.0", default-features = false }
 
 # Cumulus dependencies
 cumulus-client-cli = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
@@ -249,7 +244,7 @@ cumulus-relay-chain-interface = { git = "https://github.com/paritytech/polkadot-
 cumulus-relay-chain-minimal-node = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
 cumulus-test-relay-sproof-builder = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
 pallet-collator-selection = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
-parachain-info = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
+parachain-info = { package = "staging-parachain-info", git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
 xcm-emulator = { git = "https://github.com/paritytech/polkadot-sdk.git", tag = "polkadot-v1.7.0", default-features = false }
 
 # Frontier
